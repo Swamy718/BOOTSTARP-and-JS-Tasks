@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Task3</title>
+        <script>
+            function multiply(){
+                document.getElementById("mul").style.borderColor = "skyblue";
+            var n1=document.getElementById("input1").value;
+            var n2=document.getElementById("input2").value;
+             var s=n1*n2;
+            document.getElementById("output").textContent=s;
+        }
+        function divide(){
+            var n1=document.getElementById("input1").value;
+            var n2=document.getElementById("input2").value;
+             var s=n1/n2;
+            document.getElementById("output").textContent=s;
+        }
+        </script>
+        <style>
+            div{
+                border: 2px solid black;
+                margin: auto;
+                width: 350px;
+                padding-top: 5px;
+                padding-left: 10px;
+            }
+            label{
+                display: inline-block;
+                width: 100px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+        <label for="given">1st Number:-</label>
+        <input type="text" name="given" id="input1"><br><br>
+        <label for="given">2nd Number:-</label>
+        <input type="text" name="given" id="input2"><br><br>      
+    <button onclick="multiply()" id="mul">Multiply</button>
+    <button onclick="divide()">Divide</button>      
+    <p>The Result Is:-</p>
+    <p id="output"></p>
+</div>  
+    </body>
+</html>

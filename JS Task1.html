@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Task1</title>
+        <script>
+            function reverse(){
+            var n=document.getElementById("given").value;
+             var rev=0;
+            while(n>0){
+                var temp=n%10;
+                rev=rev*10 + temp;
+                n=Math.floor(n/10);
+            }
+
+            document.getElementById("output").innerHTML=rev;
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+        <label for="given">Enter a Number:-</label>
+        <input type="text" name="given" id="given"><br>     
+    </form>
+    <button onclick="reverse()">submit</button>   
+    <p>Reverse of a given number:-</p>
+    <p id="output"></p>
+       
+    </body>
+</html>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Task4</title>
+        <script>
+            function getDate() {
+                var currentDate = new Date();
+                var date = currentDate.toDateString();
+                var d=date.split(" ");
+                document.getElementById("Date").innerHTML =d[2]+"/"+d[1]+"/"+d[3];
+            }
+
+        function gettime(){
+            var currentDate = new Date();
+            document.getElementById("Time").innerHTML=currentDate;
+        }
+        </script>
+    </head>
+    <body>
+        <button onclick="getDate()">show date</button>
+        <p id="Date"></p>
+        <button onclick="gettime()">show Time</button>
+        <p id="Time"></p>
+    </body>
+</html>
